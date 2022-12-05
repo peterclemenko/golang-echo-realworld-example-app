@@ -4,11 +4,7 @@
 FROM golang:alpine AS build
 
 RUN apk add --update --no-cache \
-    sqlite \
-    tzdata \
-    ca-certificates \
-    build-base \
-    bash
+    build-base 
 
 ENV GO111MODULE=on \
     GOOS=linux \
