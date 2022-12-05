@@ -8,9 +8,7 @@ RUN apk add --update --no-cache \
     tzdata \
     ca-certificates \
     build-base \
-    bash \
-    && \
-    cp --remove-destination
+    bash
 
 ENV GO111MODULE=on \
     GOOS=linux \
